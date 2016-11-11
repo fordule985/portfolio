@@ -106,21 +106,22 @@ function portfolioComponent () {
       transition: 2s;
     }
     .portfolioTitle {
-      margin: 2em 2em 2em 1.5em;
+      margin: 5em 0 1em 33%;
+      width : 40%;
       padding: 0.5em;
-      font-size: 3em;
+      font-size: 2em;
       color: ${PINK};
       background-color: ${YELLOW};
       border-radius: 4px;
-      border: 4px solid ${YELLOW};
+      border: 4px solid #E5E7E6;
       transition: 2s;
     }
     .portfolioBody {
-      margin: 0 40% 0 0em;
+      margin: 1em 0 6em 13%;
       color: GREY;
-      text-align: justify;
-      font-size: 1.2em;
-      transition: 2s;
+      text-align: center;
+      font-size: 1.5em;
+      transition: 4s;
     }
   	.portfolioItem_isHover {
       width                : 100%;
@@ -132,19 +133,20 @@ function portfolioComponent () {
       transition           : 2s;
     }
   .portfolioTitle_isHover {
-      margin                : 2em 2em 2em 1.5em;
+      margin                : 5em 0 1em 33%;
+      width                 : 40%;
       padding               : 0.5em;
-      font-size             : 3em;
-      background-color: 		hsla(154,90%,38%,1);
+      font-size             : 2em;
+      background-color: 		hsla(42,100%,70%,1);
       border-radius         : 4px;
-      border                : 4px solid;
+    border                  : 4px solid #8A4F7D;
       transition            : 2s;
     }
   .portfolioBody_isHover {
-      margin               : 0 35% 0 4em;
+      margin               : 1em 0 6em 13%;
       text-align           : justify;
-      font-size            : 1.2em;
-      transition           : 2s;
+      font-size            : 1.5em;
+      transition           : 4s;
     }
 
   `
@@ -157,7 +159,7 @@ function portfolioComponent () {
             Portfolio: Moj kviz
           </div>
           <div class="${css.portfolioBody}">
-            Moj kviz je kviz aplikacija gde korisnici odgovaraju
+          Moj kviz je kviz aplikacija gde korisnici odgovaraju
             na pitanja Likertove skale i porede svoje odgovore sa
             drugima. Cuva sve odgovore u bazi podataka i omogucava
             administratoru pregledanje svih odgovora.
@@ -179,13 +181,12 @@ function portfolioComponent () {
         <div class="${css.portfolio}">
           <div class="${css.portfolioItem_isHover}">
             <div class="${css.portfolioTitle_isHover}">
-              Portfolio: Moj kviz
+              Portfolio: My quiz app
             </div>
             <div class="${css.portfolioBody_isHover}">
-            Moj kviz je kviz aplikacija gde korisnici odgovaraju
-            na pitanja Likertove skale i porede svoje odgovore sa
-            drugima. Cuva sve odgovore u bazi podataka i omogucava
-            administratoru pregledanje svih odgovora.
+            My quiz is a quiz application where users can answer Likert scale
+            questions and compare their answers with others. It preserves all
+            the answers in the database and allows Browsing administrator replies.
              </div>
           </div>
         </div>
@@ -220,9 +221,9 @@ function textboxComponent () {
   var css = csjs`
   .textbox {
     margin: 5em 25% 3em 25%;
-    margin-top: 8em;
+    margin-top: 2em;
     font-size: 2em;
-    line-height: 1.5em;
+    line-height: 1.2em;
     text-align: justify;
 
   }
@@ -232,7 +233,7 @@ function textboxComponent () {
     return yo`
       <div>
         <div class="${css.textbox}">
-         Prvi rad u JavaScriptu. Ne napredovato znaci nazadovati.
+         JavaScript is a great programming language. This is a first step but an important step towards the goal, which is to learn a programming language and become a programmer.
         </div>
       </div>
     `
