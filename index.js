@@ -204,7 +204,7 @@ function portfolioComponent () {
       yo.update(element, template())
     }
  		function openNewTab() {
-    var url = "https://djape48.github.io/kviz"
+    var url = "https://fordule985.github.io/quiz/"
     var win = window.open(url, '_blank')
     win.focus()
     //ajde radi
